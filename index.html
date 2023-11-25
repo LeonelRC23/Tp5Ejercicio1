@@ -25,7 +25,7 @@
       </button>
     </header>
     <main class="container">
-      <section class="pb-5">
+      <section class="py-3">
         <h1 class="text-center">Adivina el número</h1>
         <p>
           Al interacturar con el boton "Comenzar Juego" se generará un número
@@ -35,19 +35,17 @@
         </p>
       </section>
       <section>
-        <form>
-          <label>
-            <input
-              placeholder="Ingrese un número"
-              type="number"
-              id="ingresoNumero"
-              min="0"
-              max="100"
-              class="px-2"
-            />
-            <button type="button" onclick="capturar()">Enviar</button>
-        </label>
-        </form>
+        <label for="numeros">Ingrese un número</label>
+        <input
+          name="numeros"
+          placeholder="Ingrese un número"
+          type="number"
+          id="ingresoNumero"
+          min="0"
+          max="100"
+          class="px-2"
+        />
+        <button type="button" id="botonEnviar">Enviar</button>
       </section>
     </main>
     <footer></footer>
